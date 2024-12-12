@@ -45,3 +45,35 @@
   display: flex;
   justify-content: center;
 }
+
+.particles canvas {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.navigation {
+  position: relative;
+  z-index: 1;
+}
+
+.f3 {
+  position: relative;
+  z-index: 1;
+}
+
+.rank {
+  position: relative;
+  z-index: 1;
+}
+
+.formLink {
+  position: relative;
+  z-index: 1; 
+}
+.center {
+  position: relative;
+  z-index: 1
+}
+

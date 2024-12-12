@@ -5,7 +5,7 @@ import Navigation from './components/Navigation/Navigation'
 import Logo from './components/Logo/Logo'
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm'
 import Rank from './components/Rank/Rank'
-
+import ParticlesComponent from './components/Particles/particles'
 
 
 class App extends Component {
@@ -13,11 +13,17 @@ class App extends Component {
     
     return (
       <div className ="App">
-        
-        <Navigation />
+        <ParticlesComponent id ="particles"/>
+        <div className="navigation">
+          <Navigation />
+        </div>
         <Logo />
-        <ImageLinkForm />
-        <Rank />
+          <div className="fromLink">
+           <ImageLinkForm />
+          </div>
+        <div className="rank">  
+          <Rank />
+        </div>
     {/* <FaceRecognition /> */}
       </div>
  
