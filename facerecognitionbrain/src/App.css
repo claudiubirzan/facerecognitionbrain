@@ -41,39 +41,36 @@
   color: #888;
 }
 
+.navigation, .rank, .formLink, .logo {
+  position: relative;
+  z-index: 2;
+  
+  
+}
 .center {
   display: flex;
   justify-content: center;
 }
 
-.particles canvas {
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 1em; /* Optional: Add some margin for spacing */
+}
+
+.particles-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh; /* Adjust as needed */
+  background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  z-index: 1;
+}
+
+.particles {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
 }
 
-.navigation {
-  position: relative;
-  z-index: 1;
-}
-
-.f3 {
-  position: relative;
-  z-index: 1;
-}
-
-.rank {
-  position: relative;
-  z-index: 1;
-}
-
-.formLink {
-  position: relative;
-  z-index: 1; 
-}
-.center {
-  position: relative;
-  z-index: 1
-}
 

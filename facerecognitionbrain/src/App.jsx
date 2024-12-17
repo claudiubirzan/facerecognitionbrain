@@ -12,23 +12,26 @@ class App extends Component {
   render() {
     
     return (
-      <div className ="App">
-        <ParticlesComponent id ="particles"/>
+      <div className="App">
+        <div className="particles-container">
+          <ParticlesComponent id="particles" />
+        </div>
         <div className="navigation">
           <Navigation />
         </div>
-        <Logo />
-          <div className="fromLink">
-           <ImageLinkForm />
-          </div>
-        <div className="rank">  
+        <div className="logo">
+          <Logo />
+        </div>
+        <div className="formLink">
+          <ImageLinkForm />
+        </div>
+        <div className="rank">
           <Rank />
         </div>
-    {/* <FaceRecognition /> */}
+        {/* <FaceRecognition /> */}
       </div>
- 
-    )
-  }
+    );
+  };
 }
 
 export default App;
